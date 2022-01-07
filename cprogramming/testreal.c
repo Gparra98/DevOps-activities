@@ -26,7 +26,20 @@ int main(void)
             if (option == 1)
             {
                 system ("clear");
-                printf("Hola\n");
+                int one = get_int("first: ");
+                int second = get_int("second: ");
+                int third = get_int("third: ");
+                int four = get_int("four: ");
+
+    
+                    if (one<256 && second<256 && third<256 && four<256)
+                    {
+                        printf("IP number %i.%i.%i.%i \n", one, second, third, four);
+                    }
+                    else
+                    {
+                        printf("Pick a valid IP adress \n");
+                    }
                 menu = get_int("\nBack to menu type 1 or 0 to try again");
 
                 if (menu == 1)
