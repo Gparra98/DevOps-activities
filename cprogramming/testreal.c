@@ -24,7 +24,7 @@ int main(void)
         
 
             if (option == 1)
-            {
+            
                 system ("clear");
                 int one = get_int("first: ");
                 int second = get_int("second: ");
@@ -82,10 +82,10 @@ int main(void)
             else if (option == 3)
             {
                 srand(time (NULL));
-            random = rand() % 6;
+            random = rand() % 7;
             while (random == 0)
             {
-                random = rand() % 6;
+                random = rand() % 7;
             }
             printf("Your randonm number is %i: ", random);
             menu = get_int("\nBack to menu type 1 or 0 to try again");
